@@ -9,7 +9,7 @@ docker run \
   --volume '.:/workspace' \
   --workdir '/workspace' \
   --rm \
-  gzip:latest \
+  potasiak/gzip:latest \
   <gzip args>
 ```
 
@@ -20,6 +20,6 @@ docker build \
   --build-arg 'ALPINE_VERSION=3.21.2' \
   --build-arg 'GZIP_VERSION=1.13' \
   --build-arg 'GZIP_DOWNLOADS_URL=https://ftp.gnu.org/gnu/gzip' \
-  --tag 'gzip:latest' \
+  --tag 'potasiak/gzip:latest' \
   '.'
 ```
